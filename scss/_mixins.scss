@@ -1,0 +1,27 @@
+@mixin diseño-titulos{
+    font-size:2.5rem;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    margin-top: 1%;
+    text-align:center;
+    color:#000000;
+    margin-bottom: 1.2%;
+    text-align: center;}
+
+@mixin estilos-parrafos {
+    font-family: poppins;
+    font-size: 1.3rem;}
+
+@mixin estilos-sedes {
+    font-family: poppins;
+    font-size: 1.5rem;}
+
+@mixin estilos-subtitulos {
+    font-family: poppins;
+    font-size: 1.7rem;
+    font-weight: bold;}
+
+@mixin estilos-letra-chica {
+    font-family: poppins;
+    font-size: 1.2rem;}

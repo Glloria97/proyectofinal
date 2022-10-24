@@ -1,0 +1,34 @@
+/*HEADER PLANES*/
+.HeaderPlanes{
+    width: $ancho-imagenes;
+    height:15%}
+
+/*MAIN PLANES*/
+.fondosPlanes{
+    @include diseño-titulos;
+    background-color: $fondo-amarillo;
+    transition: transform 0.5s; 
+    &:hover{
+        transform:scale(1.1,1.1);}}
+
+.textoplanes{
+    @include estilos-parrafos;
+    margin-left: map-get($map: $posicionamiento, $key:margen-left);
+    margin-top: map-get($map: $posicionamiento, $key:margen-top);}
+
+#imgagenesPlanes{
+    width:19rem;
+    height: 13rem;
+    margin-left: map-get($map: $posicionamiento, $key:margen-left);
+    margin-bottom: map-get($map: $posicionamiento, $key:margen-bottom);}
+
+.textooutdoor{
+    @include estilos-parrafos;
+    margin-top: 1.5%;
+    margin-bottom: ($margen-bottom)+2;
+    margin-left: map-get($map: $posicionamiento, $key:margen-left);
+    margin-right: map-get($map: $posicionamiento, $key:margen-right);}
+
+@media screen and (max-width: 760px) {
+    .textoplanes{margin-top: 0%;
+    margin-bottom:($margen-bottom)+2;}}

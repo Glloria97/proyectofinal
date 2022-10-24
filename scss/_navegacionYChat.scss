@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    align-items: center;
+    .logoSportClub{
+        width:15rem;
+        height:3.2rem;}
+    .nav-item{
+        text-decoration: none;
+        font-family: ANTON;
+        font-size: 1.7rem;
+        color: rgb(0, 0, 0);
+        margin: 9px;
+        margin-left: 75px;
+        letter-spacing: 2px; 
+        color: #000000;
+        background-image: linear-gradient(black, black);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 4px;
+        transition: background-size .3s;
+        &:hover{
+            background-size: 100% 2px;}
+        a:focus {
+            background-size: 100% 2px;}}}
+.chatWhasapp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;}

@@ -1,0 +1,81 @@
+.formulario{
+    width: $ancho-imagenes;
+    height: 100%;  
+    padding: 1.2rem 5rem;
+    .field{
+        width: $ancho-imagenes;
+        border: 2px solid rgba(0, 0, 0, 0.184);
+        outline:none;
+        background-color: #ecdd85;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: map-get($map: $posicionamiento, $key:margen-bottom);
+        transition: all 0.3s ease-in-out;
+        &hover{
+            background-color: rgba(0,0,0,0.1);}
+        
+        &:focus{
+            border: 2px solid #8d6d05;
+            background-color: #fff;}}
+    #btn1{
+        width: $ancho-imagenes;
+        padding: 0.5rem 1rem;
+        background-color: #090909;
+        color: #fff ;
+        font-size: 1.1rem;
+        border: none;
+        outline:none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #f82516;}}
+    #btn2{
+        @extend #btn1;
+        margin-top: map-get($map: $posicionamiento, $key:margen-top)-8;
+            &:hover{
+                background-color: #f82516;}}
+    .contact-box{
+        max-width: $ancho-imagenes;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        background-color: $fondo-amarillo;
+        box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+        padding: 2rem;
+        .tituloFormulario{
+            width: ($ancho-imagenes)-10;
+            height: 150VH;
+            background-image: url(https://images.pexels.com/photos/4752861/pexels-photo-4752861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            H2{
+                @include diseño-titulos;
+                color:#F8C216;
+                font-size: 4rem;
+                margin-top: map-get($map: $posicionamiento, $key:margen-top)+40;}}
+        .textoFormulario{
+            @include estilos-parrafos;}
+        .MotivoContacto{
+            @include estilos-parrafos;
+            padding: 0.2rem;}
+        .subtitulos{
+            @include estilos-subtitulos;
+            padding-left: 0% !important;}
+        .subtitulos1{
+            @include estilos-subtitulos;
+            margin-top: map-get($map: $posicionamiento, $key:margen-top);}}}
+
+
+@media screen and (max-width: 880px){
+.formulario{
+    padding: 0%;
+    .contact-box{
+        grid-template-columns: auto;
+        margin-top: 2%;
+        .tituloFormulario{
+            width: 0%;
+            height: 15VH;
+            H2{
+                @include diseño-titulos;
+                font-size: 3.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;}}}}}
