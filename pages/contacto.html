@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="deportes, sportclub, entrenamiento, gym, fitness, gimnasio, salud">
+    <meta name="description" content="Contactate con nosotros y sumate hoy a la comunidad Sportclub">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>SportClub-Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <script src="../js/scrollreveal.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+
+
+<!--LOGO Y LINKS INTERNOS-->
+
+<nav class="navbar navbar-expand-lg navbar-light colorCabeceras">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../imagenes/Logo SportClub.PNG.jpg"alt="logo" class="logoSportClub">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/eventos.html">EVENTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/planes.html">PLANES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/sedes.html">SEDES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+<!--CHAT DE WHATSAPP-->
+    <section class="chatWhasapp">
+        <a href="https://api.whatsapp.com/send?phone=5401164840163" target="blank">
+            <img src="../imagenes/wp.png" alt="¿Preguntas?¡Escribinos!" width="300px">
+        </a>
+    </section>
+
+
+<!--FORMULARIO CONTACTO-->
+<main class="formulario animate_animated animate_FadeIn">
+    <div class="contact-box">
+        <div class="tituloFormulario">
+            <h2>Contactanos!</h2>
+        </div>
+    <form action="ventas.html">
+            <div>
+                <label for="nombre" class="textoFormulario"> Nombre Completo </label>
+                <input id ="nombre" name="nombre" type="text" placeholder="Nombre y Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off" class="field">  
+            </div>
+
+            <div>
+                <label for="Mail" class="textoFormulario">Mail</label>
+                <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required class="field">
+            </div>
+
+            <div>
+                 <label for="telefonicos" class="textoFormulario">Teléfono</label>
+                 <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required class="field">
+            </div>
+
+            <fieldset>
+                <legend class="subtitulos">¿Sos socio?</legend>
+                <label for="Si" class="textoFormulario">Si
+                    <input id="Si" name="socio" type="radio" value="Si" checked class="field">
+                </label>
+                <label for="No" class="textoFormulario">No
+                    <input id="No" name="socio" type="radio" value="No" class="field">
+                </label>
+            
+                <div class="container">
+                <div class="row">
+                    <legend class="subtitulos">Motivos del contacto</legend>
+                    <label class="col-md-10 MotivoContacto" for="sugerencia">Quiero realizar una sugerencia.
+                        <input id="sugerencia" name="sugerencia" type="checkbox" value="sugerencia">
+                    </label>
+                    <label class="col-md-10 MotivoContacto" for="reclamo">Quiero realizar un reclamo.
+                        <input id="reclamo" name="reclamo" type="checkbox" value="reclamo">
+                    </label>   
+                    <label class="col-md-10 MotivoContacto" for="planes">Quiero conocer los planes y costos. 
+                        <input id="planes" name="planes" type="checkbox" value="planes">
+                    </label> 
+                </div> 
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend class="subtitulos1">Indique un Comentario</legend>
+                <textarea name="comentario" id="comentario" cols="70" rows="4" placeholder="Ingrese su comentario" class="field"></textarea>
+            </fieldset>
+
+            <div>
+                    <input id="btn1" type="submit" value="Enviar">
+                    <input id="btn2" type="reset" value="Limpiar">
+            </div>
+        </form>
+    </div>
+</main>
+
+<!--FOOTER-->
+<footer class="footerfinal"> 
+    <div class="RedesSociales">
+        <div class="ContenedorIconosRedes">
+            <div class="icon">
+                <a href="https://www.instagram.com/sportcluboficial/?hl=es" target="blank">
+                    <svg heigth="60" width="60">
+                        <circle cx="30" cy="30" r=27 stroke="black" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="https://www.facebook.com/sportcluboficial/"target="blank">
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-facebook-circle'></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href= "https://api.whatsapp.com/send?phone=5401164840163"target="blank">
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="https://twitter.com/SportClub_Gym?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-twitter' ></i>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <p class="derechos">Copyright © 2022 Todos los derechos reservados</p>
+    <p class="derechos">Gimnasios Argentinos S.A</p>
+ </footer>
+
+
+<script src="../js/bootstrap.bundle.min.js"></script> 
+<script src="../js/index.js"></script>
+</body>
+</html>
